@@ -22,13 +22,5 @@ namespace Trabalho_Gustavo_Karoline.Models
         [Display(Name = "Quantidade de Estoque")]
         [Required(ErrorMessage = "Campo 'Quantidade de Estoque' é obrigatório.")]
         public int Qtde_Estoque { get; set; }
-
-        public virtual void Atualizacao(int qtde, int id)
-        {
-            if(id == codigo)
-            {
-                Qtde_Estoque -= qtde;
-            }
-        }
     }
 }
