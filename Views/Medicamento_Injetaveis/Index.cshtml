@@ -5,14 +5,14 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Index</h1>
+<h1>Medicamentos Injetaveis</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class="btn btn-success">Adicionar</a>
 </p>
-<table class="table">
+<table class="table table-bordered">
     <thead>
-        <tr>
+        <tr style="background-color: #ADD8E6; color: #000;">
             <th>
                 @Html.DisplayNameFor(model => model.nome)
             </th>
@@ -38,9 +38,9 @@
                 @Html.DisplayFor(modelItem => item.Qtde_Estoque)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.codigo">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.codigo">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.codigo">Delete</a>
+                    <a asp-action="Edit" asp-route-id="@item.codigo" class="btn btn-primary">Editar</a> |
+                    <a asp-action="Details" asp-route-id="@item.codigo" class="btn btn-info">Detalhe</a> |
+                    <a asp-action="Delete" asp-route-id="@item.codigo" class="btn btn-danger">Excluir</a>
             </td>
         </tr>
 }

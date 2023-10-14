@@ -2,7 +2,69 @@
     ViewData["Title"] = "Home Page";
 }
 
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #ADD8E6;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+    }
+
+    .feature {
+        margin-bottom: 20px;
+    }
+
+    .feature-icon {
+        font-size: 36px;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+
+    .feature-text {
+        display: inline-block;
+        vertical-align: middle;
+    }
+</style>
+
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <div class="container">
+        <h1>O que nosso site oferece:</h1>
+
+        <div class="feature">
+            <span class="feature-icon">🏥</span>
+            <div class="feature-text">
+                <h2>Gerenciamento de Consultas Simplificado</h2>
+                <p>Marque, reagende e cancele consultas com apenas alguns cliques. Nosso sistema de agendamento facilita a organização do seu horário médico.</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <span class="feature-icon">👩‍⚕️</span>
+            <div class="feature-text">
+                <h2>Cadastro de Pacientes e Médicos</h2>
+                <p>Adicione rapidamente novos pacientes ao nosso sistema, mantendo um histórico detalhado e seguro de suas informações médicas. Além disso, cadastre médicos com suas especialidades para agilizar o agendamento de consultas.</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <span class="feature-icon">📋</span>
+            <div class="feature-text">
+                <h2>Sistema de CRUD Eficiente</h2>
+                <p>Oferecemos um sistema de gerenciamento de dados fácil de usar, permitindo que você crie, leia, atualize e exclua registros de pacientes e médicos com facilidade.</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <span class="feature-icon">🔗</span>
+            <div class="feature-text">
+                <h2>Integração com Profissionais de Saúde</h2>
+                <p>Facilitamos a comunicação entre pacientes e médicos, permitindo que eles acessem informações relevantes sobre consultas, prescrições e históricos médicos.</p>
+            </div>
+        </div>
+    </div>
 </div>

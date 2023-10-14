@@ -22,8 +22,19 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Manter Dados
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link text-dark" asp-area="" asp-controller="Consultas" asp-action="Index">Consulta</a></li>
+                                <li><a class="nav-link text-dark" asp-area="" asp-controller="Medicos" asp-action="Index">Medicos</a></li>
+                                <li><a class="nav-link text-dark" asp-area="" asp-controller="Pacientes" asp-action="Index">Pacientes</a></li>
+                                <li><a class="nav-link text-dark" asp-area="" asp-controller="Medicamento_Injetaveis" asp-action="Index">Medicamentos Injetaveis</a></li>
+                            </ul>
+                        </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Créditos</a>
                         </li>
                     </ul>
                 </div>
